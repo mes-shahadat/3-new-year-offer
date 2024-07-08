@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Merriweather", serif;
+}
+
+::selection {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+.banner>div {
+    width: 80%;
+    margin: 5rem auto;
+    position: relative;
+}
+
+.banner>div>img {
+    width: 100%;
+}
+
+.banner-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.banner-details h3 {
+    font-size: 2.8rem;
+    margin: 1rem 0;
+}
+
+.banner-details h1 {
+    font-size: 6rem;
+}
+
+.banner>div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99.5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+    border-radius: 3rem;
+}
+
+/* ################### utility class ######################## */
+
+.text-red {
+    color: red;
+}
+
+.text-grey {
+    color: rgba(7, 2, 17, 0.6);
+}
+
+.btn-primary {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    padding: 1.5rem 2.5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* ################### discount section ################### */
+
+.discount {
+    width: 60%;
+    margin: auto;
+}
+
+.discount .details {   
+    text-align: center;
+}
+
+.discount .details * {
+    font-family: "Inter", sans-serif;
+}
+
+.discount div h1 {
+    font-size: 8rem;
+    margin: 6rem 0;
+}
+
+.discount div h3 {
+    font-size: 2.2rem;
+}
+
+.discount div h2 {
+    font-size: 4.5rem;
+    margin: 1.5rem 0;
+}
+
+.discount div {
+    text-align: center;
+}
+
+.discount img {
+    width: 80%;
+}
+
+/* #################### party section ############################# */
+
+/* i tried to try fitting img in a new way and this broke .party element in high & low resolution. my monitor resolution is 1600 X 900 */
+.party {
+    color: white;
+    max-width: 82.8%;
+    margin: 10rem auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("./images/Vectorrr.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fb9c39;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.party>div {
+    margin: 6rem 0 6rem 6rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.party h1 {
+    font-size: 8.5rem;
+}
+
+.party p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 2rem 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.party a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+.party img {
+    height: 60%;
+    margin: 6.1rem auto;
+}
+
+
+/* ################### party-details section ############################ */
+
+.party-details {
+    border-top: 2px solid transparent;
+    width: 82.5%;
+    margin: auto;
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0));
+}
+
+.party-details > div {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10rem;
+}
+
+.party-details > div * {
+    margin: 1.5rem 0;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+/* ######################  offer section ###################### */
+
+.offer {
+    width: 82.5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer div {
+    width: 30%;
+}
+
+.offer * {
+    font-family: "Inter", sans-serif;
+}
+
+.offer .details h2 {
+    font-size: 2rem;
+}
+
+.offer .details h1 {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+}
+
+.offer .details p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.offer .image {
+    text-align: center;
+}
+
+.offer .image div{
+    width: 100%;
+    border: 1rem solid red;
+    border-radius: 50%;
+    margin: auto;
+    padding: 3.5rem;
+    transform: scale(1.1);
+}
+
+.offer .image div img{
+    width: 100%;
+}
+
+.offer .footer h1 {
+    font-size: 4rem;
+}
+
+.offer .footer p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 1.5rem 0;
+}
+
+.offer .footer img {
+    width: 30%;
+}
+
+.offer .details, .offer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ######################## sale section ############################# */
+
+.sale {
+    width: 82.5%;
+    margin: 20rem auto;
+}
+
+.sale .details {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.sale .details h3 {
+    font-size: 2rem;
+}
+
+.sale .details h1 {
+    font-size: 5.5rem;
+    margin: 1.5rem 0;
+}
+
+.sale .details p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.sale .images {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0;
+}
+
+.sale .images>img {
+    width: 50%;
+    z-index: 2;
+}
+
+.sale .images div  {
+    text-align: end;
+    margin: 5rem;
+}
+
+.sale .images div img {
+    width: 80%;
+    z-index: 2;
+}
+
+.sale .images+img {
+    width: 100%;
+    margin-top: -65rem;
+}
+
+/* ###################### gift section ####################### */
+
+.gifts {
+    width: 82.5%;
+    margin: auto;
+}
+
+.gifts div:first-child {
+    width: 60%;
+}
+
+.gifts div:first-child h2 {
+    font-size: 2rem;
+}
+
+.gifts div:first-child h1 {
+    font-size: 4.5rem;
+}
+
+.gifts div:first-child p {
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+.gifts div:first-child * {
+    margin: 1.5rem 3rem;
+}
+
+.gifts .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gifts .images img {
+    width: 30%;
+    margin: 1.5rem;
+}
+
+/* ################### news letter section ######################### */
+
+.news-latter {
+    border: 2px solid transparent;
+    width: 82.5%;
+    margin: 11rem auto;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.news-latter>div {
+    width: 60%;
+    margin: 10rem auto;
+}
+
+.news-latter img {
+    width: 15%;
+}
+
+.news-latter h1 {
+    font-size: 4rem;
+}
+
+.news-latter p {
+    font-size: 1.7rem;
+}
+
+.news-latter div div {
+    width: 70%;
+    height: 6rem;
+    margin: auto;
+    border-radius: 6rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.news-latter div div input {
+    width: 67%;
+    height: 100%;
+    padding: 2.5rem 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+}
+
+.news-latter div div input:focus {
+    outline: none;
+}
+
+.news-latter div div button {
+    font-weight: bold;
+    width: 33%;
+    border-radius: initial;
+}
+
+.news-latter > div > * {
+    margin: 0 0 3.5rem 0;
+}
+
+
+/* ##################### footer ############################# */
+
+.contact-details {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10rem 0;
+}
+
+.contact-details > div {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-details > div address {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3.5rem;
+}
+
+.contact-details address p {
+    font-size: 2rem;
+}
+
+.contact-details .social {
+    text-align: center;
+}
+
+.contact-details .social * {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.contact-details hr {
+    margin: 4rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.contact-details .footer * {
+    font-size: 2rem;
+}
+
+.contact-details .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details .footer a{
+    text-decoration: none;
+    color: white;
+}
